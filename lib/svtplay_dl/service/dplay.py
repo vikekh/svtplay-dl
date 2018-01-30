@@ -6,12 +6,12 @@ import copy
 import json
 import time
 import os
+from urllib.parse import urlparse, quote
 
 from svtplay_dl.service import Service
 from svtplay_dl.fetcher.hds import hdsparse
 from svtplay_dl.fetcher.hls import hlsparse
 from svtplay_dl.subtitle import subtitle
-from svtplay_dl.utils.urllib import quote, urlparse
 from svtplay_dl.error import ServiceError
 from svtplay_dl.utils import filenamify
 from svtplay_dl.log import log
